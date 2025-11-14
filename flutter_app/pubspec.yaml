@@ -1,0 +1,53 @@
+name: vehicle_recognition_app
+description: Araç Marka/Model, Plaka ve Renk Tanıma Mobil Uygulaması
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Material Design
+  cupertino_icons: ^1.0.6
+
+  # Kamera
+  camera: ^0.10.5+5
+  image_picker: ^1.0.4
+
+  # TensorFlow Lite
+  tflite_flutter: ^0.10.4
+  tflite_flutter_helper: ^0.3.1
+
+  # Görüntü İşleme
+  image: ^4.1.3
+
+  # OCR (Google ML Kit)
+  google_ml_kit: ^0.16.3
+
+  # Veritabanı
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  path: ^1.8.3
+
+  # State Management
+  provider: ^6.1.1
+
+  # Yardımcı Kütüphaneler
+  permission_handler: ^11.0.1
+  flutter_svg: ^2.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/
+    - assets/models/model.tflite
+    - assets/models/labels.txt
